@@ -19,7 +19,7 @@ spring:
       fetch-max-wait: 36000
       enable-auto-commit: false
       client-id: example
-      bootstrap-servers: ${kafka_bootstrap_servers:localhost:49092}
+      bootstrap-servers: ${kafka_bootstrap_servers:localhost:59092}
     producer:
       client-id: example
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
