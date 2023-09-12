@@ -3,7 +3,7 @@ example:
     consumer-enabled: ${consumer-enabled:true}
 spring:
   kafka:
-    properties:
+    properties: # Login info for the kafka-example compose file
       sasl:
         jaas:
           config: org.apache.kafka.common.security.plain.PlainLoginModule required username=${kafka_username:'admin'} password=${kafka_password:'admin-secret'};
